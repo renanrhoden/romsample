@@ -42,4 +42,6 @@ dependencies {
     annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.1.0-alpha01'
 
     implementation 'org.kodein.di:kodein-di-generic-jvm:6.0.1'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
 }
