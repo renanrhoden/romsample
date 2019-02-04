@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
 
-    <TextView
-            android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   tools:context=".MainActivity">
 
-</LinearLayout>
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:id="@+id/text"
+        android:background="@drawable/fundo_anotacao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="10dp"
+        android:gravity="start"
+        android:textColor="#41342e"
+        android:textSize="30sp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
